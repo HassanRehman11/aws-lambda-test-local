@@ -1,4 +1,4 @@
-# Local test of AWS Lambda function via ECR
+# Local test of AWS Lambda function for ECR upload
 
 Follow the documentation for installing the aws-lambda-rie <br/>
 https://docs.aws.amazon.com/lambda/latest/dg/images-test.html
