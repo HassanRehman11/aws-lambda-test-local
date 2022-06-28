@@ -10,5 +10,5 @@ sudo docker build . -t test_aws
 sudo docker run -v ~/.aws-lambda-rie:/aws-lambda -p 9700:8080 --entrypoint aws-lambda/aws-lambda-rie test_aws /usr/local/bin/python -m awslambdaric app.handler
 
 ## Test Lambda Function
-curl -XPOST http://localhost:9700/2015-03-31/functions/function/invocations -d '{"task":"list_zodiac"}'
+curl -XPOST http://localhost:9700/2015-03-31/functions/function/invocations -d '{"task":"list_zodiac"}' \n
 curl -XPOST http://localhost:9700/2015-03-31/functions/function/invocations -d '{"task":"get_horoscope","sign":"virgo","day":"tomorrow"}'
